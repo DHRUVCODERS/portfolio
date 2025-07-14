@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhruv Kalra | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav>
+      <h1>MyPortfolio</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <img src="images/DH.jpg" alt="Dhruv Kalra Portrait" class="profile-img">
+    <h2>Welcome!</h2>
+    <p>Hi, I'm <strong>Dhruv Kalra</strong>, a Web Developer passionate about building beautiful and functional websites.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Dhruv Kalra, currently pursuing a Bachelor of Computer Applications (BCA) from MLK PG College. I am passionate about web development and specialize in creating responsive, dynamic websites using HTML, CSS, JavaScript, PHP, and MySQL. With a strong foundation in both frontend and backend technologies, I enjoy building projects that solve real-world problems and enhance user experience.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>College Management System</h3>
+      <p>A PHP-based CRUD system for managing students, faculty, courses, and results.</p>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>A JavaScript-based app that fetches real-time weather data using the OpenWeatherMap API.</p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section" data-aos="fade-up">
+    <h2>Resume</h2>
+    <a href="resume/resume.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyPortfolio | Designed by Dhruv Kalra</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function sendMessage(e) {
+      e.preventDefault();
+      alert("Thanks for your message!");
+    }
+  </script>
+</body>
+</html>
